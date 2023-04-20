@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Register2 = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,11 +19,10 @@ const Register2 = () => {
   };
   console.log(email, password);
   return (
-    <div>
-      <form onSubmit={handleForm}>
+    <div >
+      <form   onSubmit={handleForm}>
         <input onChange={handleEmail} type="email" name="email" id="email" />
-        <br />
-        <br />
+       <br />
         <input
           onBlur={handlePassword}
           type="password"
@@ -30,8 +30,8 @@ const Register2 = () => {
           id="password"
         />
         <br />
-        <br />
-        <input type="submit" value="submit" />
+       
+        <input className="btn btn-primary" type="submit" value="submit" />
       </form>
     </div>
   );
