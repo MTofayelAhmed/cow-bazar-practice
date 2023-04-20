@@ -11,6 +11,7 @@ import Main from './components/LayOut/Main';
 import Register from './components/Register/Register';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import Register2 from './components/Register2/Register2';
 
 
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
       path: '/register',
       element: <Register></Register>,
+    },
+    {
+      path:'/register2',
+      element: <Register2></Register2>
     }
  
     
